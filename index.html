@@ -71,8 +71,8 @@
 	<p>お使いの環境では再生できません。</p>
 </audio>
 
-<input id="btn1" type="button" value="操作ボタン" onmousedown="mdown(this, upper, lower)"
-	onmouseup="mup(this, upper, lower)">
+<input id="btn1" type="button" value="操作ボタン" onmousedown="mdown(this, upper, lower)" onmouseup="mup(this, upper, lower)"
+	touchstart="mdown(this, upper, lower)" touchend="mup(this, upper, lower)">
 
 <script type="text/javascript">
 	var upper = [true, false, false, false, true, false, false, true, false, false, false, false];

@@ -1,0 +1,111 @@
+<audio src="./src/audio/mp3/on01.mp3" id="on01" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on02.mp3" id="on02" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on03.mp3" id="on03" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on04.mp3" id="on04" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on05.mp3" id="on05" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on06.mp3" id="on06" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on07.mp3" id="on07" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on08.mp3" id="on08" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on09.mp3" id="on09" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on10.mp3" id="on10" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on11.mp3" id="on11" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/on12.mp3" id="on12" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/01.mp3" id="01" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/02.mp3" id="02" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/03.mp3" id="03" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/04.mp3" id="04" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/05.mp3" id="05" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/06.mp3" id="06" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/07.mp3" id="07" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/08.mp3" id="08" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/09.mp3" id="09" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/10.mp3" id="10" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/11.mp3" id="11" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+<audio src="./src/audio/mp3/12.mp3" id="12" preload="auto">
+	<p>お使いの環境では再生できません。</p>
+</audio>
+
+<input id="btn1" type="button" value="操作ボタン" onmousedown="mdown(this, upper, lower)"
+	onmouseup="mup(this, upper, lower)">
+
+<script type="text/javascript">
+	var upper = [true, false, false, false, true, false, false, true, false, false, false, false];
+	var lower = [true, false, false, false, false, false, false, false, false, false, false, false];
+	function mdown(obj, upper, lower) {
+		for (let index = 0; index < upper.length; index++) {
+			if (upper[index]) {
+				var str = ('00' + (index + 1)).slice(-2);
+				document.getElementById(str).currentTime = 0;
+				document.getElementById(str).play();
+			}
+		}
+		for (let index = 0; index < lower.length; index++) {
+			if (lower[index]) {
+				var str = 'on' + ('00' + (index + 1)).slice(-2);
+				document.getElementById(str).currentTime = 0;
+				document.getElementById(str).play();
+			}
+		}
+	}
+	function mup(obj, upper, lower) {
+		for (let index = 0; index < upper.length; index++) {
+			if (upper[index]) {
+				var str = ('00' + (index + 1)).slice(-2);
+				document.getElementById(str).pause();
+			}
+		}
+		for (let index = 0; index < lower.length; index++) {
+			if (lower[index]) {
+				var str = 'on' + ('00' + (index + 1)).slice(-2);
+				document.getElementById(str).pause();
+			}
+		}
+	}
+
+</script>

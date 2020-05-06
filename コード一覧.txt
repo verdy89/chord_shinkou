@@ -1,0 +1,56 @@
+X	r+4+7
+Xm	r+3+7
+Xaug	
+Xdim	
+Xsus4	
+
+X7	r+4+7+10
+XM7	
+Xm7	
+XmM7	
+Xdim7	
+X7sus4	
+
+X6	r+4+7+9
+X6(9)	r+2+4+7+9
+X7(#9)	r+3+4+7+10
+X7(13)	
+X7(9)	
+X7(b9)	
+X7(b5)	
+Xadd9	
+Xm6	
+Xm7(9)	
+XM7(9)	
+Xm7-5	
+
+X
+┣ X：r+4+7
+　　┣ X7：r+4+7+10
+　　　　┣ X7(b9)
+　　　　┣ X7(9)
+　　　　┣ X7(#9)
+　　　　┣ X7(13)
+　　　　┣ X7(b5)
+　　┣ XM7
+　　┣ X6：r+4+7+9
+　　┣ Xadd9
+┣ Xm：r+3+7
+　　┣ Xm7
+　　┣ XmM7
+　　┣ Xm6
+┣ Xaug
+┣ Xdim
+　　┣ Xdim7
+┣ Xsus4
+　　┣ X7sus4
+
+
+A m    7    -5 (b9) / B
+A -    7    -5  b9
+  m    M7       9
+  dim  dim7     #9
+  aug  6        11
+  sus4          #11
+  sus2          b13
+                13
